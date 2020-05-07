@@ -10,6 +10,6 @@ def lorentzInnerProduct(x,y):
 
 
 def lorentzDistancePoint(x,y):
-    clippedProd =  np.clip(-1*(lorentzInnerProduct(x,y)),1 ,None)
+    clippedProd =  np.clip(-1*(lorentzInnerProduct(x,y)),1,None)
     return np.arccosh(clippedProd)
 

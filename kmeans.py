@@ -1,5 +1,6 @@
 import numpy as np
 from numpy.linalg import norm
+import helpers as mine
 
 
 
@@ -29,6 +30,7 @@ class Kmeans:
         for c in range(matrix.shape[0]):
             row[c] = self.hypDistancePoint(matrix[c,:],array)
         return row
+
 
     def lorentzFactor(self,x):
         return 1/(np.sqrt(1-np.square(norm(x))))
